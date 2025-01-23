@@ -1,0 +1,15 @@
+body{
+    background:black url(grunge-black-concrete-textured-background.jpg) no-repeat right top ;
+    background-size: 100% auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title{
+    font-size: 200%;
+    width:100%;
+    height: auto;
+    text-align: center;
+    padding-top: 1%;
+}
+.title:focus{
+    outline:none;
+}
