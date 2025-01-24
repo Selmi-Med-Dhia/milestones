@@ -13,3 +13,9 @@ body{
 .title:focus{
     outline:none;
 }
+.container{
+    display : flex;
+}
+.low-lever-container{
+    flex-direction: column;
+}
