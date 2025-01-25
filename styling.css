@@ -68,8 +68,11 @@ header{
     opacity:0.7;
     text-align: center;
     min-width:fit-content;
-    height:30px;
-    line-height:0;
+    height:auto;
+    min-height: fit-content;
+    white-space: normal;
+    overflow-wrap:break-word;
+    padding: 3px;
     cursor: pointer;
     background-color: #446a3aae;
     border-color: #3e4246;
@@ -83,28 +86,38 @@ header{
 }
 .chapter-title{
     text-align: center;
-    height:30px;
-    line-height:0;
+    height:auto;
+    min-height: fit-content;
+    white-space: normal;
+    overflow-wrap:break-word;
+    padding: 3px;
+    min-height: fit-content;
+    white-space: normal;
+    overflow-wrap:break-word;
     cursor: pointer;
     background-color: #191a1c;
-    color:white;
+    color:rgba(255, 255, 255, 0.675);
     margin-left: 5%;
     margin-right: 5%;
     border-color: #313539;
 }
 .sub-chapter-title{
     text-align: center;
-    height:30px;
-    line-height:0;
+    height:auto;
+    min-height: fit-content;
+    white-space: normal;
+    overflow-wrap:break-word;
+    padding: 3px;
     cursor: pointer;
     background-color: #2e2f31b3;
-    color:white;
+    color:rgba(255, 255, 255, 0.632);
     margin-left: 10%;
     margin-right: 10%;
     border-color: #313539;
 }
 .crossed{
-    text-decoration: line-through red 2px;
+    text-decoration: line-through rgb(109, 0, 0) 3px;
+    background-color: #661f1f51;
 }
 .options-container1{
     height:55px;
