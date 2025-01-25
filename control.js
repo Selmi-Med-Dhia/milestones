@@ -99,7 +99,7 @@ function showContainer3(){
 function addChapterIndex(index){
     let subjects = localStorage.getItem('subjects');
     subjects = JSON.parse(subjects);
-    subjects[concernedSubjectGlobal].chapters.splice(index, 0, new chapter( document.getElementById('floating-input2').value ));
+    subjects[concernedSubjectGlobal].chapters.splice(index, 0, new chapter( toTitle(document.getElementById('floating-input2').value) ));
     subjects = JSON.stringify(subjects);
     localStorage.setItem('subjects', subjects);
     document.getElementById('floating-input2').value = "";
@@ -290,7 +290,7 @@ function addSubject(){
     }else{
         subjects = JSON.parse(subjects);
     }
-    subjects.push(new subject(document.getElementById('floating-input1').value));
+    subjects.push(new subject( toTitle(document.getElementById('floating-input1').value) ));
     subjects = JSON.stringify(subjects);
     localStorage.setItem('subjects', subjects);
     document.getElementById('floating-input1').value = "";
@@ -301,7 +301,7 @@ function addSubject(){
 function addChapter(concernedSubject){
     let subjects = localStorage.getItem('subjects')
     subjects = JSON.parse(subjects);
-    subjects[concernedSubject].chapters.push(new chapter( document.getElementById('floating-input2').value ));
+    subjects[concernedSubject].chapters.push(new chapter( toTitle(document.getElementById('floating-input2').value) ));
     subjects = JSON.stringify(subjects);
     localStorage.setItem('subjects', subjects);
     document.getElementById('floating-input2').value = "";
@@ -312,7 +312,7 @@ function addChapter(concernedSubject){
 function addSubChapter(){
     let subjects = localStorage.getItem('subjects')
     subjects = JSON.parse(subjects);
-    subjects[concernedSubjectGlobal].chapters[concernedChapterGlobal].subChapters.push(new subChapter( document.getElementById('floating-input3').value ));
+    subjects[concernedSubjectGlobal].chapters[concernedChapterGlobal].subChapters.push(new subChapter( toTitle(document.getElementById('floating-input3').value) ));
     subjects = JSON.stringify(subjects);
     localStorage.setItem('subjects', subjects);
     document.getElementById('floating-input3').value = "";
@@ -339,4 +339,7 @@ function checkEnter1(event){
     if(event.key == "Enter" && document.getElementById('confirm-button1').disabled == false){
         addSubject();
     }
+}
+function toTitle(str){
+    return( str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') );
 }
