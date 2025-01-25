@@ -20,6 +20,7 @@ function setup(){
     //localStorage.setItem('subjects', JSON.stringify([]));
     free = true;
     document.getElementById('title').value = localStorage.getItem('title');
+    document.getElementById('pageTitle').innerHTML = localStorage.getItem('title');
     let subjects = localStorage.getItem('subjects');
     if (subjects != null){
         subjects = JSON.parse(subjects);
