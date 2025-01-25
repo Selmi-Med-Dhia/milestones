@@ -42,6 +42,18 @@
         <button id="cancel-button2" class="btn btn-outline-secondary" onclick="hideContainer2()">Cancel</button>
     </div>
 
+    <div id='adding-sub-chapter-container' class="bg-dark" style="visibility:hidden">
+        <h3 id='adding-container-header2'>
+            Adding a sub-chapter to...
+        </h3>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floating-input3" placeholder="" oninput="attemptEnabling3()" onkeypress=" checkEnter3(event)" selectable="false">
+            <label for="floating-input3" style="color:white;opacity:0.5;">Sub-chapter title</label>
+        </div>
+        <button id="confirm-button3" class="btn btn-outline-primary" disabled="true" onclick="addChapter()" value=-1>Confirm</button>
+        <button id="cancel-button3" class="btn btn-outline-secondary" onclick="hideContainer3()">Cancel</button>
+    </div>
+
     <div class="options-container1" id="options-container1" onmouseleave="hideOptionsContainer1()">
         <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="deleteSubject()">Delete</button>
         <button class="mini-btn" onclick="showContainer3()">Add chapter</button>
@@ -52,7 +64,13 @@
         <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="uncross()">Uncross</button>
         <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="deleteChapter()">Delete</button>
         <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="showContainer4()">Add after</button>
-        <button class="mini-btn">Add sub-chapter</button>
+        <button class="mini-btn" onclick="showContainer5()">Add sub-chapter</button>
+    </div>
+
+    <div class="options-container1 options-container3" id="options-container3" onmouseleave="hideOptionsContainer3()">
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="crossSub()">Cross</button>
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="uncrossSub()">Uncross</button>
+        <button class="mini-btn" onclick="deleteSubChapter()">Delete</button>
     </div>
 
 </body>

@@ -39,7 +39,7 @@ header{
     color:white;
     border:1px solid #313539
 }
-#adding-subject-container,#adding-chapter-container{
+#adding-subject-container,#adding-chapter-container,#adding-sub-chapter-container{
     position:fixed;
     width:30%;
     height:fit-content;
@@ -47,17 +47,17 @@ header{
     top:50%;
     translate: -50% -50%;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(91, 91, 91);
     padding: 20px;
 }
-#cancel-button1, #confirm-button1, #cancel-button2, #confirm-button2{
+#cancel-button1, #confirm-button1, #cancel-button2, #confirm-button2, #cancel-button3, #confirm-button3{
     width:fit-content;
     aspect-ratio: 2/1;
     font-size: 120%;
     float: right;
     margin-right: 10px;
 }
-#floating-input1, #floating-input2{
+#floating-input1, #floating-input2, #floating-input3{
     background:#313539;;
     border:0;
     color:white;
@@ -83,13 +83,24 @@ header{
 }
 .chapter-title{
     text-align: center;
-    height:10%;
+    height:30px;
     line-height:0;
     cursor: pointer;
     background-color: #191a1c;
     color:white;
     margin-left: 5%;
     margin-right: 5%;
+    border-color: #313539;
+}
+.sub-chapter-title{
+    text-align: center;
+    height:30px;
+    line-height:0;
+    cursor: pointer;
+    background-color: #2e2f31b3;
+    color:white;
+    margin-left: 10%;
+    margin-right: 10%;
     border-color: #313539;
 }
 .crossed{
@@ -114,6 +125,9 @@ header{
 .options-container2{
     height:130px;
     width:120px;
+}
+.options-container3{
+    height:78px;
 }
 .mini-btn{
     color :white;
