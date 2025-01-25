@@ -22,15 +22,34 @@ function setup(){
         let htmlCode = "";
         for(sub in subjects){
             htmlCode += "<div class='container low-level-container'>";
-            htmlCode += "<div class='alert alert-success subject-title'>" + subjects[sub].name + "</div>";
+            htmlCode += "<div class='alert alert-success subject-title' onclick='showOptions1(event,"+sub+")'>" + subjects[sub].name + "</div>";
             for(chap in subjects[sub].chapters){
-                htmlCode += "<div class='alert alert-dark chapter-title'>" +subjects[sub].chapters[chap].title + "</div>";
+                htmlCode += "<div class='alert alert-dark chapter-title' onclick='showOptions2(event,"+sub+","+chap+")'>" +subjects[sub].chapters[chap].title + "</div>";
             }
             htmlCode += "<button class='plusButton' onclick='showContainer2("+sub+")'>-</button>"
             htmlCode += "</div>"
         }
         document.getElementById('display-area').innerHTML = htmlCode;
     }
+}
+function showOptions1(event, concernedSubject){
+    let elem = document.getElementById('options-container1');
+    elem.style.left = (event.clientX-1)+"px";
+    elem.style.top = (event.clientY-1)+"px";
+    elem.style.visibility = 'visible';
+}
+function showOptions2(event, concernedSubject, concernedChapter){
+    let elem = document.getElementById('options-container2');
+    elem.style.left = (event.clientX-1)+"px";
+    elem.style.top = (event.clientY-1)+"px";
+    elem.style.visibility = 'visible';
+}
+
+function hideOptionsContainer1(){
+    document.getElementById('options-container1').style.visibility = 'hidden';
+}
+function hideOptionsContainer2(){
+    document.getElementById('options-container2').style.visibility = 'hidden';
 }
 var free;
 function showContainer1(){

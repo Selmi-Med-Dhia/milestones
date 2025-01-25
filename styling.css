@@ -34,6 +34,9 @@ header{
     position: absolute;
     right:10px;
     top:10px;
+    background-color: #191a1c;
+    color:white;
+    border:1px solid #313539
 }
 #adding-subject-container,#adding-chapter-container{
     position:fixed;
@@ -61,12 +64,15 @@ header{
     margin-bottom: 8%;
 }
 .subject-title{
-    opacity:0.6;
+    opacity:0.7;
     text-align: center;
     min-width:fit-content;
     height:10%;
     line-height:0;
     cursor: pointer;
+    background-color: #446a3aae;
+    border-color: #3e4246;
+    color:#59a267;
 }
 .plusButton{
     color :white;
@@ -85,4 +91,38 @@ header{
     margin-left: 5%;
     margin-right: 5%;
     border-color: #313539;
+}
+.options-container1{
+    height:55px;
+    width:100px;
+    cursor: pointer;
+    background-color: #1a1b1c;
+    color:white;
+    border:1px solid #313539;
+    border-radius: 5px;
+    position:absolute;
+    left:200px;
+    top:150px;
+    visibility:hidden;
+    display:flex;
+    flex-direction: column;
+    padding:10;
+}
+.options-container2{
+    height:130px;
+    width:120px;
+}
+.mini-btn{
+    color :white;
+    background-color: #00000000;
+    border:0;
+    width:100%;
+    height:100%;
+    text-align: left;
+    font-size: 80%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left:10px;
+}
+.mini-btn:hover{
+    background-color: #ffffff20;
 }
