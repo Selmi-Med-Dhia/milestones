@@ -1,3 +1,4 @@
+
 body{
     background:black url(grunge-black-concrete-textured-background.jpg) repeat-y right top ;
     background-size: 100% auto;
@@ -13,7 +14,7 @@ body{
     color:white;
 }
 header{
-    margin-bottom:8%;
+    margin-bottom:40px;
 }
 .title:focus{
     outline:none;
@@ -67,7 +68,7 @@ header{
     opacity:0.7;
     text-align: center;
     min-width:fit-content;
-    height:10%;
+    height:30px;
     line-height:0;
     cursor: pointer;
     background-color: #446a3aae;
@@ -87,10 +88,12 @@ header{
     cursor: pointer;
     background-color: #191a1c;
     color:white;
-    /*text-decoration: line-through red 2px;*/
     margin-left: 5%;
     margin-right: 5%;
     border-color: #313539;
+}
+.crossed{
+    text-decoration: line-through red 2px;
 }
 .options-container1{
     height:55px;

@@ -38,20 +38,20 @@
             <input type="text" class="form-control" id="floating-input2" placeholder="" oninput="attemptEnabling2()" onkeypress=" checkEnter2(event)" selectable="false">
             <label for="floating-input2" style="color:white;opacity:0.5;">Chapter title</label>
         </div>
-        <button id="confirm-button2" class="btn btn-outline-primary" disabled="true" onclick="addChapter()">Confirm</button>
+        <button id="confirm-button2" class="btn btn-outline-primary" disabled="true" onclick="addChapter()" value=-1>Confirm</button>
         <button id="cancel-button2" class="btn btn-outline-secondary" onclick="hideContainer2()">Cancel</button>
     </div>
 
     <div class="options-container1" id="options-container1" onmouseleave="hideOptionsContainer1()">
-        <button class="mini-btn" style="border-bottom: 2px solid #313539;">Delete</button>
-        <button class="mini-btn">Add chapter</button>
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="deleteSubject()">Delete</button>
+        <button class="mini-btn" onclick="showContainer3()">Add chapter</button>
     </div>
 
     <div class="options-container1 options-container2" id="options-container2" onmouseleave="hideOptionsContainer2()">
-        <button class="mini-btn" style="border-bottom: 2px solid #313539;">Cross</button>
-        <button class="mini-btn" style="border-bottom: 2px solid #313539;">Alter</button>
-        <button class="mini-btn" style="border-bottom: 2px solid #313539;">Delete</button>
-        <button class="mini-btn" style="border-bottom: 2px solid #313539;">Add after</button>
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="cross()">Cross</button>
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="uncross()">Uncross</button>
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="deleteChapter()">Delete</button>
+        <button class="mini-btn" style="border-bottom: 2px solid #313539;" onclick="showContainer4()">Add after</button>
         <button class="mini-btn">Add sub-chapter</button>
     </div>
 
