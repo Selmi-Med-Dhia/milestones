@@ -91,11 +91,12 @@ function deleteSubject(){
     setup();
 }
 
-function showContainer3(){
+function showContainer6(){
     hideOptionsContainer1();
     showContainer2(concernedSubjectGlobal);
     document.getElementById('confirm-button2').onclick = () => addChapterIndex(0);
     document.getElementById('confirm-button2').value = -1;
+    concernedChapterGlobal =-1;
 }
 function addChapterIndex(index){
     let subjects = localStorage.getItem('subjects');
