@@ -7,9 +7,11 @@ at school or even solo-learning.
 - you can click on chapters to see relating options.
 - you can add a sub-chapter to a chapter by clicking on the 'Add sub-chapter' option in its options-menu.
 - you can also click on sub-chapters to see relating options.
-* you only need to download the following files for the app to work:
+* you only need to download the following files for the app to work properly:
   - index.html (this is the executable file)
   - control.js
   - styling.css
+  - grunge-black-concrete-textured-background.jpg
+  - stone.ico
 
 thank you for using our app!
