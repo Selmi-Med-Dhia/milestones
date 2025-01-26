@@ -22,6 +22,10 @@ header{
 .container{
     display : flex;
 }
+#display-area{
+    margin :0;
+    min-width:100%;
+}
 .low-level-container{
     flex-direction: column;
 }
